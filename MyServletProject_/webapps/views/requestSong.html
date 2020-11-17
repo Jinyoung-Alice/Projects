@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>신청곡 입력</title>
+    <style>
+        .div1 {
+            width: 500px;
+            height: 260px;
+            border: 3px dashed navy;
+            background: lightgreen;
+        }
+
+        #search1 {
+            padding-left: 10px;
+            margin-left: 40px;   
+        }
+
+        #search2 {
+            padding-left: 10px;
+            margin-left: 3px;
+            margin-top: 6px;
+        }
+
+        #ta {
+            margin-left: 56px;
+            margin-top: 6px;
+        }
+
+        input[type= "submit"], [type= "reset"] {
+            margin: 10px 0px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>신청곡을 입력하세요</h1>
+    
+     <form action="/test/silsub.do" method="get">
+
+    <div class="div1">
+        <form>
+            <label for="search">신청자</label> : </label> 
+            <input type="text" size="35" name="search" id="search1">
+            &nbsp;&nbsp;&nbsp; <br>
+
+            <label for="search">신청자 메일</label> : </label> 
+            <input type="text" size="35" name="search" id="search2">
+            &nbsp;&nbsp;&nbsp; <br>
+
+            <label for="search">사연</label> : </label>
+            <textarea name="content" cols="45" rows="10" id="ta"></textarea>
+            <br>
+
+            <input type="submit" value="신청하기">
+            <input type="reset" value="취소">
+
+        </form> 
+    </div>
+</body>
+</html>
